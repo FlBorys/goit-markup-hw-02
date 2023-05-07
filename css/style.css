@@ -1,89 +1,225 @@
 :root {
-    --primary-text-color: rgba(67, 68, 85, 1);
-    --primary-header-color: rgba(46, 47, 66, 1);
-    --accent-color: rgba(77, 90, 229, 1);
-    --additional-text-color: rgba(255, 255, 255, 1);
-    --select-color: rgba(64, 75, 191, 1);
-    --portfolio-button: rgba(244, 244, 253, 1);
-    --portfolio-button-select: rgba(64, 75, 191, 1);
+  --primary-text-color: rgba(67, 68, 85, 1);
+  --primary-header-color: rgba(46, 47, 66, 1);
+  --accent-color: rgba(77, 90, 229, 1);
+  --additional-text-color: rgba(255, 255, 255, 1);
+  --select-color: rgba(64, 75, 191, 1);
+  --portfolio-button: rgba(244, 244, 253, 1);
+  --portfolio-button-select: rgba(64, 75, 191, 1);
 }
 
+body {
+  color: var(--primary-text-color);
+  background-color: var(--additional-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Header */
+
 .logo {
-    color: var(--primary-header-color)
+  color: var(--primary-header-color);
+  letter-spacing: 0.03em;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo:focus,
+.logo:hover {
+  color: var(--select-color);
 }
 
 .logo .logo-part,
 .footer-logo .logo-part {
-    color: var(--accent-color);
+  color: var(--accent-color);
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .site-nav .link {
-    color: var(--primary-header-color);
+  color: var(--primary-header-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.site-nav .link:active,
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--select-color);
 }
 
 .contacts .link {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
 }
 
+.contacts .link:active,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--select-color);
+}
+
+/* Main */
+
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .hero .title {
-    color: var(--additional-text-color);
-    background-color: var(--primary-header-color);
+  color: var(--additional-text-color);
+  background-color: var(--primary-header-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
 }
 
 .hero .button {
-    color: var(--additional-text-color);
-    background-color: var(--accent-color);
+  color: var(--additional-text-color);
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
-.description . title {
-    color: var(--primary-header-color);
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--portfolio-button-select);
+}
+
+.description .title {
+  color: var(--primary-header-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .description .text {
-    color: var(--additional-text-color);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.section .title{
-    color: var(--primary-header-color);
+.section-team .title {
+  color: var(--primary-header-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
-.team .title {
-    color: var(--primary-header-color);
+.team .name {
+  color: var(--primary-header-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .team .text {
-    color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
 }
 
+.title-hidden {
+  display: none;
+}
+
+/* Footer */
+
 .footer .footer-logo {
-    color: var(--additional-text-color);
-    background-color: var(--primary-header-color);
+  color: var(--additional-text-color);
+  background-color: var(--primary-header-color);
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer .footer-logo:hover,
+.footer .footer-logo:focus {
+  color: var(--select-color);
 }
 
 .footer .text {
-    color: var(--additional-text-color);
-    background-color: var(--primary-header-color);
+  color: var(--additional-text-color);
+  background-color: var(--primary-header-color);
+  font-size: 16px;
+  line-height: 1.15;
 }
 
+/* Portfolio page */
+
 .selection .button {
-    color: var(--accent-color);
-    background-color: var(--portfolio-button);
+  color: var(--accent-color);
+  background-color: var(--portfolio-button);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
 .selection .button:hover,
 .selection .button:focus {
-    color: var(--additional-text-color);
-    background-color: var(--portfolio-button-select);
+  color: var(--additional-text-color);
+  background-color: var(--select-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .link .title {
-    color: var(--primary-header-color);
+  color: var(--primary-header-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
-.link .text{
-    color: var(--primary-text-color);
+.link .title:hover,
+.link .title:focus {
+  color: var(--select-color);
+}
+
+.link .text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.link .text:hover,
+.link .text:focus {
+  color: var(--select-color);
 }
