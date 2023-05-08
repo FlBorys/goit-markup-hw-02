@@ -63,6 +63,10 @@ body {
   color: var(--select-color);
 }
 
+.contacts {
+  font-style: normal;
+}
+
 .contacts .list .link {
   color: var(--primary-text-color);
   font-style: normal;
@@ -131,7 +135,7 @@ ul {
 }
 
 .section-service .title {
-  color: --primary-header-color;
+  color: var(--primary-header-color);
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
