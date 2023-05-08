@@ -49,6 +49,7 @@ body {
 .list .link {
   color: var(--primary-header-color);
   font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
@@ -82,6 +83,10 @@ ul {
   list-style: none;
 }
 
+.hero {
+  background-color: var(--primary-header-color);
+}
+
 .hero .title {
   color: var(--additional-text-color);
   background-color: var(--primary-header-color);
@@ -100,7 +105,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  font-family: "Robot", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero .button:hover,
@@ -182,6 +187,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--accent-color);
 }
 
 .footer-logo .logo-part {
@@ -195,9 +201,9 @@ ul {
   text-decoration: none;
 }
 
-.footer .footer-logo:hover,
-.footer .footer-logo:focus {
-  color: var(--select-color);
+.footer-logo:hover .logo-part,
+.footer-logo:focus .logo-part {
+  color: var(--accent-color);
 }
 
 .footer .text {
@@ -234,6 +240,10 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+}
+
+.portfolio .list {
+  list-style: none;
 }
 
 .link {
